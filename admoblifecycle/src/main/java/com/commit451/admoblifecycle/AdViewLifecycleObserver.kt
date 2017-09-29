@@ -5,7 +5,7 @@ import android.arch.lifecycle.LifecycleObserver
 import android.arch.lifecycle.OnLifecycleEvent
 import com.google.android.gms.ads.AdView
 
-class AdmobLifecycle(val adView: AdView): LifecycleObserver {
+class AdViewLifecycleObserver(private val adView: AdView): LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     fun onResume() {

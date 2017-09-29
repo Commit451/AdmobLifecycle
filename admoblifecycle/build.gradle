@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 26
@@ -28,7 +29,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
 
-    implementation 'android.arch.lifecycle:extensions:1.0.0-alpha9'
+    implementation 'android.arch.lifecycle:extensions:1.0.0-alpha9-1'
 
     compileOnly 'com.google.firebase:firebase-ads:11.4.0'
 }
