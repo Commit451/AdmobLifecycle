@@ -4,11 +4,11 @@ Prebuilt Admob ad view lifecycle observers
 [![Build Status](https://travis-ci.org/Commit451/AdmobLifecycle.svg?branch=master)](https://travis-ci.org/Commit451/AdmobLifecycle) [![](https://jitpack.io/v/Commit451/AdmobLifecycle.svg)](https://jitpack.io/#Commit451/AdmobLifecycle)
 
 # Usage
-To start listening for connectivity change events:
+To bind an `AdView` to your activity lifecycle:
 ```kotlin
 val adView = findViewById<AdView>(R.id.adview)
 val lifecycleObserver = AdViewLifecycleObserver(adView)
-// within support v26.1.0, AppCompatActivity
+// within support v26.1.0+, AppCompatActivity
 lifecycle.addObserver(lifecycleObserver)
 ```
 
